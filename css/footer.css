@@ -1,0 +1,94 @@
+#otherFeader{
+    display: flex;
+    
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#otherFeader p{
+    margin: 0;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#firmInfo,
+#contactFirm{
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#firmInfo div{
+    display: flex;
+    align-items: center;
+}
+
+#firmInfo img{
+    width: 10%;
+}
+
+#firmInfo h1,
+#contactFirm h1,
+#feedbackFooter h1{
+    margin: 0;
+}
+
+#contactFirm div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#contactFirm img{
+    width: 8%;
+}
+
+#feedbackFooter{
+    display: flex;
+    padding-left: 1%;
+    padding-right: 1%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#phonenunberAndEmail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#phonenunberAndEmail input{
+    width: 32%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#phoneNumber{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#nameAndModel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#nameAndModel input{
+    width: 48%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#inputText{
+    width: 99%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}

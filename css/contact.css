@@ -1,0 +1,50 @@
+#contact{
+    background-color: #dddddd;
+    padding-bottom: 2%;
+}
+
+#contact h1{
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: xxx-large;
+    text-align: center;
+}
+
+#contact iframe{
+    filter: drop-shadow(5px 5px 10px #666);
+    margin-left: 1%;
+    border-radius: 10px;
+    width: 68%;
+}
+
+#mapsAndContact{
+    display: flex;
+}
+
+#infoContact{
+    padding-left: 1%;
+    width: 30%;
+    padding-right: 1%;
+}
+
+#infoContact h1{
+    font-size: xx-large;
+    text-align: center;
+}
+
+#infoContact p{
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+#infoContact div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#infoContact img{
+    width: 5%;
+}

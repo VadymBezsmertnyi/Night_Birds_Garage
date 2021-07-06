@@ -1,0 +1,33 @@
+#menuAndLogo{
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+#logo img{
+    width: 25%;
+}
+
+#logo h1{
+    font-size: 40px;
+    margin: 0;
+}
+
+#menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%;
+}
+
+#menu a{
+    width: 30%;
+    height: 60%;
+    text-align: center;
+}

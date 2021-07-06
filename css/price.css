@@ -1,0 +1,54 @@
+#price {
+    background-color: rgb(221, 221, 221);
+    padding-bottom: 2%;
+}
+
+#price h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#price p {
+    text-align: center;
+    margin: 0;
+    padding-top: 1%;
+}
+
+#priceMain {
+    display: flex;
+    padding-top: 1%;
+}
+
+#priceMain div {
+    width: 32%;
+    padding-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    background-color: white;
+}
+
+#priceMain div a {
+    width: 50%;
+}
+
+#priceCalculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+}
+
+#priceCalculator h1{
+    font-size: 30px;
+}
+#priceCalculator a {
+    background-color: white;
+    width: 40%;
+}
