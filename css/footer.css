@@ -64,9 +64,11 @@
 }
 
 #phonenunberAndEmail input{
+    text-align: center;
     width: 32%;
     margin-top: 1%;
     margin-bottom: 1%;
+    box-shadow: 0px 0px 13px rgb(62 62 62);
 }
 
 #phoneNumber{
@@ -83,13 +85,17 @@
 }
 
 #nameAndModel input{
+    text-align: center;
     width: 48%;
     margin-top: 1%;
     margin-bottom: 1%;
+    box-shadow: 0px 0px 13px rgb(62 62 62);
 }
 
 #inputText{
+    text-align: center;
     width: 99%;
     margin-top: 1%;
     margin-bottom: 1%;
+    box-shadow: 0px 0px 13px rgb(62 62 62);
 }
