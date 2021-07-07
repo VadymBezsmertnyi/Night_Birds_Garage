@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'TolkienCyr';
+    src: url('fonts/TolkienCyr.woff2') format('woff2');
+    
+    font-style: normal;
+}
+
+#menu a,
+.buttonBtn,
+#priceCalculator a,
+#typeWorking div a,
+h1{
+    font-family: 'TolkienCyr';
+}
+

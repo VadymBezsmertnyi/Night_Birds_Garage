@@ -1,18 +1,18 @@
 #promotions h1 {
-    font-size: xxx-large;
+    font-size: 50px;
     text-align: center;
 }
 
 #listPromotions {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
 }
 
 #listPromotions img {
     padding-left: 2%;
-    width: 30%;
+    width: 25%;
 }
 
 #listPromotions ul {
@@ -20,47 +20,11 @@
 }
 
 #listPromotions li {
-    font-size: xx-large;
+    font-size: 25px;
     padding-top: 1%;
     padding-bottom: 1%;
 }
 
-h1 {
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-    font-size: 32px;
-    font-style: italic;
-    font-variant: normal;
-    font-weight: 100;
-}
-
-h3 {
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-    font-size: 14px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-}
-
-p {
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-    font-size: 14px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-}
-
-a {
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-    font-size: 21px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-}
-
-li {
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-    font-size: 13px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
+#listPromotions div{
+    width: 60%;
 }

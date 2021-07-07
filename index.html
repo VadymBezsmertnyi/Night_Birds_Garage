@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/contact.css"> <!-- css contact -->
     <link rel="stylesheet" href="css\footer.css"> <!-- css footer -->
     <link rel="stylesheet" href="css\feedbackClassic.css"> <!-- css feedback classic -->
+    <link rel="stylesheet" href="css\fontStyle.css"> <!-- css style fonts -->
+
+    <link rel="preload" href="css/fonts/KingthingsPetrock.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body>
@@ -23,7 +26,7 @@
     <div id="header">
         <div id="address_header">
             <p>
-                Cherkasy, street Baida Vyshnevetskoho 41
+                м.Черкаси вул.Байди Вишневецького, 41
             </p>
         </div>
         <div id="contact_header">
@@ -43,10 +46,10 @@
             <h1>Night Birds Garage</h1>
         </div>
         <div id="menu">
-            <a href="index.html" class="button">Home</a>
-            <a href="#price" class="button">Prices</a>
-            <a href="#contact" class="button">Contact</a>
-            <a href="calculation.html" class="button">Price calculator</a>
+            <a href="index.html" class="button">Головна</a>
+            <a href="#price" class="button">Ціни</a>
+            <a href="#contact" class="button">Контакти</a>
+            <a href="calculation.html" class="button">Калькулятор ціни</a>
         </div>
     </div>
 
@@ -54,74 +57,74 @@
     <div id="info">
         <img src="img/background_moto_repair.jpg" alt="">
         <span>
-            <p>Service and repair of motorcycles in the city of Cherkasy</p>
-            <a href="#feedbackFooter" class="button">Feedback</a>
+            <p>Сервісне обслуговування та ремонт мотоциклів у місті Черкаси</p>
+            <a href="#feedbackFooter" class="button">Зворотній зв'язок</a>
         </span>
     </div>
     <div id="veryGood">
         <div id="workink">
             <img src="img/motocycle_left.jpg" alt="">
-            <p>We work with all types of motorcycles</p>
+            <p>Ми працюємо з усіма типами мотоциклів</p>
             <img src="img/motocycle_right.jpg" alt="">
         </div>
         <div id="typeWorking">
             <div id="preparing">
                 <img src="icons/repair.png" alt="">
-                <p>Preparing for the motorcycle season</p>
-                <a href="" class="button">Leave a request</a>
+                <p>Підготовка до мотоциклетного сезону</p>
+                <a href="" class="button">Залишити запит</a>
             </div>
             <div id="winter">
                 <img src="icons/repair.png" alt="">
-                <p>Preparing a motorcycle for winter</p>
-                <a href="" class="button">Leave a request</a>
+                <p>Підготовка мотоцикла до зими</p>
+                <a href="" class="button">Залишити запит</a>
             </div>
             <div id="parking">
                 <img src="icons/repair.png" alt="">
-                <p>Motorcycle parking for the winter</p>
-                <a href="" class="button">Leave a request</a>
+                <p>Парковка мотоциклів на зиму</p>
+                <a href="" class="button">Залишити запит</a>
             </div>
         </div>
     </div>
 
     <!-- Price & promotions -->
     <div id="price">
-        <h1>Price</h1>
-        <p>Prices are for major repairs and service.
-            <br>More details - use the calculator of the price of repair and service.</p>
+        <h1 class="chapter">Ціни</h1>
+        <p>Ціни вказані на популярні послуги.
+            <br>Детальніше - скористайтеся калькулятором ціни.</p>
         <div id="priceMain">
             <div>
-                <h1>Preparing a motorcycle for winter</h1>
-                <p>Price: from 600 hryvnias.</p>
-                <a href="" class="button">Order</a>
+                <h3>Підготовка мотоцикла до зими</h3>
+                <p>Ціна: 600грн.</p>
+                <a href="" class="button">Замовити</a>
             </div>
             <div>
-                <h1>Changing tires</h1>
-                <p>Price: from 100 hryvnias.</p>
-                <a href="" class="button">Order</a>
+                <h3>Заміна шин</h3>
+                <p>Ціна: 100грн.</p>
+                <a href="" class="button">Замовити</a>
             </div>
             <div>
-                <h1>Setting up the motorcycle</h1>
-                <p>Price: from 600 hryvnias.</p>
-                <a href="" class="button">Order</a>
+                <h3>Налаштування мотоцикла</h3>
+                <p>Ціна: 600грн.</p>
+                <a href="" class="button">Замовити</a>
             </div>
         </div>
         <div id="priceCalculator">
-            <h1>To know the price of repair and maintenance of the motorcycle in more detail go to the price calculator
-            </h1>
-            <a href="" class="button">Go to the price calculator</a>
+            <h3>Щоб детальніше дізнатися ціну на ремонт та обслуговування мотоцикла, перейдіть до калькулятора цін
+            </h3>
+            <a href="calculation.html" class="button">Перейти до калькулятора цін</a>
         </div>
     </div>
     <div id="promotions">
-        <h1>Promotions</h1>
+        <h1 class="chapter">Акції</h1>
         <div id="listPromotions">
             <img src="img/Spare_parts.png" alt="">
             <div>
                 <ul>
-                    <li>Buying oil from us - replacement is free.</li>
-                    <li>Preparation of the motorcycle for certification and registration - 10% discount per year.</li>
-                    <li>When painting a motorcycle, we have free polishing.</li>
-                    <li>Replacement of tires for winter tires on a motorcycle - 25% discount.</li>
-                    <li>Subscription for parking for the winter for 4 months - a discount of 15% per month.</li>
+                    <li>Купуйте у нас масло - заміна безкоштовна.</li>
+                    <li>Підготовка мотоцикла до сертифікації та реєстрації - знижка 10% на рік.</li>
+                    <li>Фарбування мотоцикла в нас - безкоштовне полірування.</li>
+                    <li>Заміна на зимові шини мотоцикла - знижка 25%.</li>
+                    <li>Абонемент на паркування на зиму на 4 місяці - знижка 15% на місяць.</li>
                 </ul>
             </div>
         </div>
@@ -129,16 +132,16 @@
 
     <!-- Contact -->
     <div id="contact">
-        <h1>Contact</h1>
+        <h1 class="chapter">Контакти</h1>
         <div id="mapsAndContact">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d773.6390130691814!2d32.04347502925402!3d49.436088898709244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14d21a32bc2b7%3A0x9037c73363b82c0!2z0JrQu9GD0LHQvdC40Lkg0LTRltC8ICwg0LPQsNGA0LDQtiAi0J3RltGH0L3RliDQv9GC0LDRhdC4Ig!5e1!3m2!1suk!2sua!4v1625562659156!5m2!1suk!2sua"
                 style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
             <div id="infoContact">
-                <h1>Repair and service of motorcycles</h1>
+                <h1>Ремонт та обслуговування мотоциклів</h1>
                 <h1>"Night Birds Garage"</h1>
-                <p>We work every day</p>
+                <p>Ми працюємо кожного дня</p>
                 <div>
                     <img src="icons/telephone.png" alt="">
                     <p>+38 (097) 471 27 04</p>
@@ -149,9 +152,9 @@
                 </div>
                 <div>
                     <img src="icons/maps_grunge.png" alt="">
-                    <p>Cherkasy, Ukraine
-                        Street Baida Vyshnevetskoho, 41
-                        cars / coop. "Gvardia"</p>
+                    <p>м.Черкаси, Україна
+                        вул. Байди Вишневецького, 41
+                        гар./кооп. "Гвардія"</p>
                 </div>
             </div>
         </div>
@@ -165,11 +168,12 @@
                     <img src="logo_garage.png" alt="Logo">
                     <h1>Night Birds Garage</h1>
                 </div>
-                <p>We offer a full range of motorcycle repair and maintenance services on the territory of Cherkasy. We
-                    are ready to promptly repair and service a motorcycle of any complexity.</p>
+                <p>Ми пропонуємо повний спектр послуг з ремонту та технічного обслуговування мотоциклів на території
+                    Черкас. Ми
+                    готові оперативно відремонтувати та обслужити мотоцикл будь-якої складності.</p>
             </div>
             <div id="contactFirm">
-                <h1>Contact</h1>
+                <h1>Контакти</h1>
                 <div>
                     <img src="icons/telephone.png" alt="">
                     <p>+38 (097) 471 27 04</p>
@@ -180,13 +184,13 @@
                 </div>
                 <div>
                     <img src="icons/maps_grunge.png" alt="">
-                    <p>Cherkasy, Ukraine
-                        Street Baida Vyshnevetskoho, 41
-                        cars / coop. "Gvardia"</p>
+                    <p>м.Черкаси, Україна
+                        вул. Байди Вишневецького, 41
+                        гар./кооп. "Гвардія"</p>
                 </div>
             </div>
             <form id="feedbackFooter" action="php/postFooter.php" method="POST">
-                <h1>Feedback</h1>
+                <h1>Зворотній зв'язок</h1>
                 <div id="phonenunberAndEmail">
                     <input id="inputName" name="name" type="text" pattern="[a-zA-Zа-яА-ЯёЁъЪіІїЇєЄ]{1,20}"
                         maxlength="20" placeholder="Name" required>
@@ -202,19 +206,19 @@
                 </div>
                 <textarea id="inputText" name="message" required="" maxlength="900"
                     placeholder="Write a question"></textarea>
-                <button class="buttonBtn" id="send" type="submit" class="buttonServiceList">Send</button>
+                <button class="buttonBtn" id="send" type="submit" class="buttonServiceList">Відправити</button>
             </form>
         </div>
         <div id="infoFeader"></div>
     </div>
 
     <!-- Feedback classic -->
-    <div class="modal" style="display:table;">
+    <div class="modal">
         <div class="modal__dialog">
             <div class="modal__content">
                 <form id="formFeedbackClassic" action="#">
                     <div data-close="" class="modal__close">×</div>
-                    <div class="modal__title">WE WILL CONTACT YOU ASAP!</div>
+                    <div class="modal__title">Ми з вами звяжемося.</div>
                     <div id="contactFeedbackClassic">
                         <input name="name" type="text" pattern="[a-zA-Zа-яА-ЯёЁъЪіІїЇєЄ]{1,20}" maxlength="20"
                             placeholder="Your name" required class="modal__input">
@@ -231,11 +235,11 @@
                         <input name="model" type="text" maxlength="20" placeholder="Model motocycle" required
                             class="modal__input">
                     </div>
-                    <textarea id="listOrders" name="message" required="" value="List of orders" placeholder="Write a question"
-                        class="modal__input" disabled>List of orders</textarea>
+                    <textarea id="listOrders" name="message" required="" value="List of orders"
+                        placeholder="Write a question" class="modal__input" disabled>List of orders</textarea>
                     <textarea name="message" required="" maxlength="900" placeholder="Write a question"
                         class="modal__input"></textarea>
-                    <button class="buttonBtn">Call me back</button>
+                    <button class="buttonBtn">Передзвоніть мені</button>
                 </form>
             </div>
         </div>

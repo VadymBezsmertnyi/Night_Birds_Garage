@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/contact.css"> <!-- css contact -->
     <link rel="stylesheet" href="css\footer.css"> <!-- css footer -->
     <link rel="stylesheet" href="css\feedbackClassic.css"> <!-- css feedback classic -->
+    <link rel="stylesheet" href="css\fontStyle.css"> <!-- css style fonts -->
+
+    <link rel="preload" href="css/fonts/KingthingsPetrock.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body>
@@ -23,7 +26,7 @@
     <div id="header">
         <div id="address_header">
             <p>
-                Cherkasy, street Baida Vyshnevetskoho 41
+                м.Черкаси вул.Байди Вишневецького, 41
             </p>
         </div>
         <div id="contact_header">
@@ -43,24 +46,16 @@
             <h1>Night Birds Garage</h1>
         </div>
         <div id="menu">
-            <a href="index.html" class="button">Home</a>
-            <a href="" class="button">Prices</a>
-            <a href="" class="button">Contact</a>
-            <a href="" class="button">Price calculator</a>
+            <a href="index.html" class="button">Головна</a>
+            <a href="#price" class="button">Ціни</a>
+            <a href="#contact" class="button">Контакти</a>
+            <a href="calculation.html" class="button">Калькулятор ціни</a>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1 style="text-align: center;">TYT CALCULATION;)</h1>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
+    
+
+    
     <!-- Footer -->
     <div id="footer">
         <div id="otherFeader">
@@ -69,11 +64,12 @@
                     <img src="logo_garage.png" alt="Logo">
                     <h1>Night Birds Garage</h1>
                 </div>
-                <p>We offer a full range of motorcycle repair and maintenance services on the territory of Cherkasy. We
-                    are ready to promptly repair and service a motorcycle of any complexity.</p>
+                <p>Ми пропонуємо повний спектр послуг з ремонту та технічного обслуговування мотоциклів на території
+                    Черкас. Ми
+                    готові оперативно відремонтувати та обслужити мотоцикл будь-якої складності.</p>
             </div>
             <div id="contactFirm">
-                <h1>Contact</h1>
+                <h1>Контакти</h1>
                 <div>
                     <img src="icons/telephone.png" alt="">
                     <p>+38 (097) 471 27 04</p>
@@ -84,16 +80,16 @@
                 </div>
                 <div>
                     <img src="icons/maps_grunge.png" alt="">
-                    <p>Cherkasy, Ukraine
-                        Street Baida Vyshnevetskoho, 41
-                        cars / coop. "Gvardia"</p>
+                    <p>м.Черкаси, Україна
+                        вул. Байди Вишневецького, 41
+                        гар./кооп. "Гвардія"</p>
                 </div>
             </div>
             <form id="feedbackFooter" action="php/postFooter.php" method="POST">
-                <h1>Feedback</h1>
+                <h1>Зворотній зв'язок</h1>
                 <div id="phonenunberAndEmail">
-                    <input id="inputName" name="name" type="text" pattern="[a-zA-Zа-яА-ЯёЁъЪіІїЇєЄ]{1,20}" maxlength="20"
-                        placeholder="Name" required>
+                    <input id="inputName" name="name" type="text" pattern="[a-zA-Zа-яА-ЯёЁъЪіІїЇєЄ]{1,20}"
+                        maxlength="20" placeholder="Name" required>
                     <input id="phoneNumber" name="phone" type="tel" maxlength="19" value="+_(___)___-__-__" required=""
                         pattern="[\+]*[1-8]{2}\s?[\(]*[0-9]{3}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2}"
                         placeholder="+__(___)___-__-__">
@@ -105,23 +101,41 @@
                     <input name="model" type="text" maxlength="20" placeholder="Model motocycle" required>
                 </div>
                 <textarea id="inputText" name="message" required="" maxlength="900"
-                    placeholder="Print text"></textarea>
-                <button class="buttonBtn" id="send" type="submit" class="buttonServiceList">Send</button>
+                    placeholder="Write a question"></textarea>
+                <button class="buttonBtn" id="send" type="submit" class="buttonServiceList">Відправити</button>
             </form>
         </div>
         <div id="infoFeader"></div>
     </div>
 
     <!-- Feedback classic -->
-    <div class="modal show">
+    <div class="modal">
         <div class="modal__dialog">
             <div class="modal__content">
-                <form action="#">
+                <form id="formFeedbackClassic" action="#">
                     <div data-close="" class="modal__close">×</div>
-                    <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
-                    <input required="" placeholder="Ваше имя" name="name" type="text" class="modal__input">
-                    <input required="" placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
-                    <button class="buttonBtn">Перезвонить мне</button>
+                    <div class="modal__title">Ми з вами звяжемося.</div>
+                    <div id="contactFeedbackClassic">
+                        <input name="name" type="text" pattern="[a-zA-Zа-яА-ЯёЁъЪіІїЇєЄ]{1,20}" maxlength="20"
+                            placeholder="Your name" required class="modal__input">
+                        <input name="phone" type="tel" maxlength="19" required=""
+                            pattern="[\+]*[1-8]{2}\s?[\(]*[0-9]{3}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2}"
+                            placeholder="Your phone number" class="modal__input">
+                        <input type="email" name="email" maxlength="40"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="" placeholder="mail@example.com"
+                            class="modal__input">
+                    </div>
+                    <div id="brandAndModelFeedbackClassic">
+                        <input name="brand" type="text" maxlength="20" placeholder="Brand motocycle" required
+                            class="modal__input">
+                        <input name="model" type="text" maxlength="20" placeholder="Model motocycle" required
+                            class="modal__input">
+                    </div>
+                    <textarea id="listOrders" name="message" required="" value="List of orders"
+                        placeholder="Write a question" class="modal__input" disabled>List of orders</textarea>
+                    <textarea name="message" required="" maxlength="900" placeholder="Write a question"
+                        class="modal__input"></textarea>
+                    <button class="buttonBtn">Передзвоніть мені</button>
                 </form>
             </div>
         </div>

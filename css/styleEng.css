@@ -1,0 +1,40 @@
+h1 {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 32px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 100;
+}
+
+h3 {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 25px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+p {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+a {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+li {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
