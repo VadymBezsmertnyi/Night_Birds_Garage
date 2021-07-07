@@ -1,0 +1,43 @@
+#calculation{
+    display: flex;
+}
+
+#calculation h1, h2{
+    text-align: center;
+}
+
+#serviceCalculation{
+    width: 69%;
+    margin-left: 1%;
+}
+
+#listServiceCalculatior{
+    width: 29%;
+    margin-right: 1%;
+}
+
+#infoShoping{
+    display: flex;
+    justify-content: space-around;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+}
+
+.listShoping{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1%;
+}
+
+.nameServiceShoping{
+    width: 80%;
+}
+
+.priceServiceShoping{
+    width: 20%;
+}
