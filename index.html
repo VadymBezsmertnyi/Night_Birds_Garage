@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="css\footer.css"> <!-- css footer -->
     <link rel="stylesheet" href="css\feedbackClassic.css"> <!-- css feedback classic -->
     <link rel="stylesheet" href="css\fontStyle.css"> <!-- css style fonts -->
-
-    <link rel="preload" href="css/fonts/KingthingsPetrock.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body>
@@ -71,17 +69,17 @@
             <div id="preparing">
                 <img src="icons/repair.png" alt="">
                 <p>Підготовка до мотоциклетного сезону</p>
-                <a href="" class="button">Залишити запит</a>
+                <button class="buttonBtn">Залишити запит</button>
             </div>
             <div id="winter">
                 <img src="icons/repair.png" alt="">
                 <p>Підготовка мотоцикла до зими</p>
-                <a href="" class="button">Залишити запит</a>
+                <button class="buttonBtn">Залишити запит</button>
             </div>
             <div id="parking">
                 <img src="icons/repair.png" alt="">
                 <p>Парковка мотоциклів на зиму</p>
-                <a href="" class="button">Залишити запит</a>
+                <button class="buttonBtn">Залишити запит</button>
             </div>
         </div>
     </div>
@@ -95,17 +93,17 @@
             <div>
                 <h3>Підготовка мотоцикла до зими</h3>
                 <p>Ціна: 600грн.</p>
-                <a href="" class="button">Замовити</a>
+                <button class="buttonBtn">Замовити</button>
             </div>
             <div>
                 <h3>Заміна шин</h3>
                 <p>Ціна: 100грн.</p>
-                <a href="" class="button">Замовити</a>
+                <button class="buttonBtn">Замовити</button>
             </div>
             <div>
                 <h3>Налаштування мотоцикла</h3>
                 <p>Ціна: 600грн.</p>
-                <a href="" class="button">Замовити</a>
+                <button class="buttonBtn">Замовити</button>
             </div>
         </div>
         <div id="priceCalculator">
@@ -193,7 +191,7 @@
                 <h1>Зворотній зв'язок</h1>
                 <div id="phonenunberAndEmail">
                     <input id="inputName" name="name" type="text" pattern="[a-zA-Zа-яА-ЯёЁъЪіІїЇєЄ]{1,20}"
-                        maxlength="20" placeholder="Name" required>
+                        maxlength="20" placeholder="Ваше ім'я" required>
                     <input id="phoneNumber" name="phone" type="tel" maxlength="19" value="+_(___)___-__-__" required=""
                         pattern="[\+]*[1-8]{2}\s?[\(]*[0-9]{3}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2}"
                         placeholder="+__(___)___-__-__">
@@ -201,11 +199,11 @@
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="" placeholder="mail@example.com">
                 </div>
                 <div id="nameAndModel">
-                    <input name="brand" type="text" maxlength="20" placeholder="Brand motocycle" required>
-                    <input name="model" type="text" maxlength="20" placeholder="Model motocycle" required>
+                    <input name="brand" type="text" maxlength="20" placeholder="Марка мотоцикла" required>
+                    <input name="model" type="text" maxlength="20" placeholder="Модель мотоцикла" required>
                 </div>
                 <textarea id="inputText" name="message" required="" maxlength="900"
-                    placeholder="Write a question"></textarea>
+                    placeholder="Напишіть запитання"></textarea>
                 <button class="buttonBtn" id="send" type="submit" class="buttonServiceList">Відправити</button>
             </form>
         </div>
@@ -221,29 +219,32 @@
                     <div class="modal__title">Ми з вами звяжемося.</div>
                     <div id="contactFeedbackClassic">
                         <input name="name" type="text" pattern="[a-zA-Zа-яА-ЯёЁъЪіІїЇєЄ]{1,20}" maxlength="20"
-                            placeholder="Your name" required class="modal__input">
+                            placeholder="Ваше ім'я" required class="modal__input">
                         <input name="phone" type="tel" maxlength="19" required=""
                             pattern="[\+]*[1-8]{2}\s?[\(]*[0-9]{3}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2}"
-                            placeholder="Your phone number" class="modal__input">
+                            placeholder="Ваш номер телефону" class="modal__input">
                         <input type="email" name="email" maxlength="40"
                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="" placeholder="mail@example.com"
                             class="modal__input">
                     </div>
                     <div id="brandAndModelFeedbackClassic">
-                        <input name="brand" type="text" maxlength="20" placeholder="Brand motocycle" required
+                        <input name="brand" type="text" maxlength="20" placeholder="Марка мотоцикла" required
                             class="modal__input">
-                        <input name="model" type="text" maxlength="20" placeholder="Model motocycle" required
+                        <input name="model" type="text" maxlength="20" placeholder="Модель мотоцикла" required
                             class="modal__input">
                     </div>
                     <textarea id="listOrders" name="message" required="" value="List of orders"
-                        placeholder="Write a question" class="modal__input" disabled>List of orders</textarea>
-                    <textarea name="message" required="" maxlength="900" placeholder="Write a question"
+                        placeholder="Основна інформація" class="modal__input" disabled>List of orders</textarea>
+                    <textarea name="message" required="" maxlength="900" placeholder="Додаткова інформація"
                         class="modal__input"></textarea>
                     <button class="buttonBtn">Передзвоніть мені</button>
                 </form>
             </div>
         </div>
     </div>
+
+    <!-- Script -->
+    <script src="js\indexScript.js"></script>
 
 </body>
 
