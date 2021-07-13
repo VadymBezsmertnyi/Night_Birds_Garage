@@ -12,6 +12,8 @@
 }
 
 #listServiceCalculatior{
+    display: flex;
+    flex-direction: column;
     width: 29%;
     margin-right: 1%;
 }
@@ -39,5 +41,23 @@
 }
 
 .priceServiceShoping{
-    width: 20%;
+    text-align: center;
+    width: 40%;
+}
+
+#money{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#money p{
+    margin: 0;
+}
+
+#textAhtung{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
 }

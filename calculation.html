@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="css\footer.css"> <!-- css footer -->
     <link rel="stylesheet" href="css\feedbackClassic.css"> <!-- css feedback classic -->
     <link rel="stylesheet" href="css\fontStyle.css"> <!-- css style fonts -->
+
     <link rel="stylesheet" href="css\cssCalculation\other.css"> <!-- css calculation other -->
+    <link rel="stylesheet" href="css\cssCalculation\otherService.css"> <!-- css other Service -->
 
     <link rel="preload" href="css/fonts/KingthingsPetrock.woff2" as="font" type="font/woff2" crossorigin>
 </head>
@@ -53,47 +55,493 @@
     <!-- Calculation -->
     <div id="calculation">
         <div id="serviceCalculation">
-            <h1>Послуги</h1>
+            <h1>Послуги з ремонту і обслуговування:</h1>
             <div id="listService">
-                <div id="otherService">
+
+                <div id="generalService">
                     <h2>Загальні послуги</h2>
-                    <div id="otherListService"></div>
+                    <div id="generalListService">
+                        <div id="generalListService_1" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameGeneralService_1" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Діаностика ходової</div>
+                                <div class="nameRepair">Діагностика системи охолодження</div>
+                                <div class="nameRepair">Діагностика паливної системи</div>
+                                <div class="nameRepair">Діагностика системи запалення</div>
+                            </div>
+                            <div id="priceGeneralService_1" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">400-570грн.</div>
+                                <div class="priceRepair">290-400грн.</div>
+                                <div class="priceRepair">175-290грн</div>
+                                <div class="priceRepair">200-300грн</div>
+                            </div>
+                        </div>
+                        <div id="generalListService_2" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameGeneralService_2" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Діагностика щеплення</div>
+                                <div class="nameRepair">Діагностика клапанів</div>
+                                <div class="nameRepair">Діагностика паливної системи</div>
+                            </div>
+                            <div id="priceGeneralService_2" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">575грн.</div>
+                                <div class="priceRepair">230-920грн.</div>
+                                <div class="priceRepair">345-750грн.</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div id="removeAddService">
+                    <h2>Зняття і встановлення:</h2>
+                    <div id="removeAddListService">
+                        <div id="removeAddListService_1" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameRemoveAddService_1" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Знімання пластику</div>
+                                <div class="nameRepair">Знімання баку</div>
+                                <div class="nameRepair">Знімання вихлопної системи</div>
+                                <div class="nameRepair">Знімання крашпедів та дуг</div>
+                            </div>
+                            <div id="priceRemoveAddService_1" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">35-270грн.</div>
+                                <div class="priceRepair">120грн.</div>
+                                <div class="priceRepair">350-580грн.</div>
+                                <div class="priceRepair">230грн.</div>
+                            </div>
+                        </div>
+                        <div id="removeAddListService_2" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameRemoveAddService_2" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Ручки зчеплення та переднього гальма</div>
+                                <div class="nameRepair">Чистка промивка бензобаку</div>
+                                <div class="nameRepair">Знімання\установка колеса</div>
+                            </div>
+                            <div id="priceRemoveAddService_2" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">230грн.</div>
+                                <div class="priceRepair">520грн.</div>
+                                <div class="priceRepair">180грн.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="engineService">
+                    <h2>Двигун:</h2>
+                    <div id="engineListService">
+                        <div id="engineListService_1" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameEngineService_1" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Регулювання клапанів</div>
+                                <div class="nameRepair">Заміна ланцюга ГРМ</div>
+                            </div>
+                            <div id="priceEngineService_1" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">345-1725грн.</div>
+                                <div class="priceRepair">345-1725грн.</div>
+                            </div>
+                        </div>
+                        <div id="engineListService_2" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameEngineService_2" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Вимірювання компресії</div>
+                                <div class="nameRepair">Заміна свічок запалення</div>
+                            </div>
+                            <div id="priceEngineService_2" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">115-575грн.</div>
+                                <div class="priceRepair">60-230грн.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="systemIOService">
+                    <h2>Система впуска и випуска:</h2>
+                    <div id="systemIOListService">
+                        <div id="systemIOListService_1" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameSystemIOService_1" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Заміна повітряного фільтру</div>
+                                <div class="nameRepair">Обслуговування паливної системи.</div>
+                                <div class="nameRepair">Заміна Магістралей</div>
+                            </div>
+                            <div id="priceSystemIOService_1" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">115-290грн.</div>
+                                <div class="priceRepair">575-1150грн.</div>
+                                <div class="priceRepair">650-920грн</div>
+                            </div>
+                        </div>
+                        <div id="systemIOListService_2" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameSystemIOService_2" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Чистка дроселю</div>
+                                <div class="nameRepair">Обслуговування паливної системи.</div>
+                            </div>
+                            <div id="priceSystemIOService_2" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">230-690грн.</div>
+                                <div class="priceRepair">575-1150грн.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="transmissionService">
+                    <h2>Трансмісія:</h2>
+                    <div id="transmissionListService">
+                        <div id="transmissionListService_1" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameTransmissionService_1" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Заміна дисків зчеплення</div>
+                            </div>
+                            <div id="priceTransmissionService_1" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">1150грн.</div>
+                            </div>
+                        </div>
+                        <div id="transmissionListService_2" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameTransmissionService_2" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Заміна масла в редукторі/мості</div>
+                            </div>
+                            <div id="priceTransmissionService_2" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">180-230грн.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lubricationAndCoolingService">
+                    <h2>Система смазки і охолодження двигуна:</h2>
+                    <div id="lubricationAndCoolingListService">
+                        <div id="lubricationAndCoolingListService_1" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameLubricationAndCoolingService_1" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Заміна Масла</div>
+                                <div class="nameRepair">Заміна масла в коробці</div>
+                            </div>
+                            <div id="priceLubricationAndCoolingService_1" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">230-290грн.</div>
+                                <div class="priceRepair">115-180грн.</div>
+                            </div>
+                        </div>
+                        <div id="lubricationAndCoolingListService_2" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameLubricationAndCoolingService_2" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Заміна антифризу</div>
+                                <div class="nameRepair">Заміна радіатора</div>
+                            </div>
+                            <div id="priceLubricationAndCoolingService_2" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">230-400грн.</div>
+                                <div class="priceRepair">575-1150грн.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="wheelsAddService">
+                    <h2>Колеса, шини і тормоза:</h2>
+                    <div id="wheelsListService">
+                        <div id="wheelsListService_1" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameWheelsService_1" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Заміна колодок барабану</div>
+                                <div class="nameRepair">Заміна гальмівного диску</div>
+                                <div class="nameRepair">Заміна гальмівної рідини (1 супорт)</div>
+                            </div>
+                            <div id="priceWheelService_1" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">230грн.</div>
+                                <div class="priceRepair">180грн.</div>
+                                <div class="priceRepair">200грн.</div>
+                            </div>
+                        </div>
+                        <div id="wheelsListService_2" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameWheelsService_2" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Ремонт супорта</div>
+                                <div class="nameRepair">Заміна підшипників в колесі</div>
+                                <div class="nameRepair">Заміна колодок (1 Супорт)</div>
+                            </div>
+                            <div id="priceWheelsService_2" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">575грн.</div>
+                                <div class="priceRepair">345грн.</div>
+                                <div class="priceRepair">115-345грн.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="steeringService">
+                    <h2>Передня підвіска і рульове управління:</h2>
+                    <div id="steeringListService">
+                        <div id="steeringListService_1" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameSteeringService_1" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Заміна підшипників рульової</div>
+                            </div>
+                            <div id="priceSteeringService_1" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">870-1050грн.</div>
+                            </div>
+                        </div>
+                        <div id="steeringListService_2" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameSteeringService_2" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Обслуговування вилки</div>
+                            </div>
+                            <div id="priceSteeringService_2" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">1035-1150грн.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="suspensionService">
+                    <h2>Задня підвіска:</h2>
+                    <div id="suspensionListService">
+                        <div id="suspensionListService_1" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameSuspensionService_1" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Заміна зірочок</div>
+                                <div class="nameRepair">Заміна ланцюга</div>
+                                <div class="nameRepair">Регулювання натягу ланцюга</div>
+                            </div>
+                            <div id="priceSuspensionService_1" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">520-810грн.</div>
+                                <div class="priceRepair">345-520грн.</div>
+                                <div class="priceRepair">230грн.</div>
+                            </div>
+                        </div>
+                        <div id="suspensionListService_2" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameSuspensionService_2" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Чистка змазка Ланцюга</div>
+                                <div class="nameRepair">Заміна кардана</div>
+                            </div>
+                            <div id="priceSuspensionService_2" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">345грн.</div>
+                                <div class="priceRepair">400грн.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="electricalService">
+                    <h2>Електрообладнання:</h2>
+                    <div id="electricalListService">
+                        <div id="electricalListService_1" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameElectricalService_1" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Заміна лампочок(ціна за одну штуку)</div>
+                                <div class="nameRepair">Установка ксенону</div>
+                                <div class="nameRepair">Заміна акумулятора</div>
+                                <div class="nameRepair">Установка сигналізації</div>
+                            </div>
+                            <div id="priceElectricalService_1" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">50грн.</div>
+                                <div class="priceRepair">575грн.</div>
+                                <div class="priceRepair">60грн.</div>
+                                <div class="priceRepair">1150грн.</div>
+                            </div>
+                        </div>
+                        <div id="electricalListService_2" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameElectricalService_2" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Встановлення ДОП освітлення</div>
+                                <div class="nameRepair">Заміна Реле Регулятора</div>
+                                <div class="nameRepair">Заміна Генератора</div>
+                                <div class="nameRepair">Заміна стартера</div>
+                            </div>
+                            <div id="priceElectricalService_2" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">460грн.</div>
+                                <div class="priceRepair">230грн.</div>
+                                <div class="priceRepair">690грн.</div>
+                                <div class="priceRepair">460грн.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="otherService">
+                    <h2>Інше:</h2>
+                    <div id="otherListService">
+                        <div id="otherListService_1" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameOtherService_1" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Чистка та змазка тросів</div>
+                            </div>
+                            <div id="priceOtherService_1" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">230грн.</div>
+                            </div>
+                        </div>
+                        <div id="otherListService_2" class="listService">
+                            <div class="listCheckbox">
+                                <p>#</p>
+                                <input type="checkbox">
+                            </div>
+                            <div id="nameOtherService_2" class="displayCenter">
+                                <div>Назва роботи чи послуги</div>
+                                <div class="nameRepair">Заміна тросу(одного)</div>
+                            </div>
+                            <div id="priceOtherService_2" class="displayCenter price">
+                                <div>Ціна:</div>
+                                <div class="priceRepair">180грн.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
+        <!-- List buy -->
         <div id="listServiceCalculatior">
             <h1>Список послуг і ціна</h1>
             <div id="infoShoping">
                 <h2>Назва послуги</h2>
                 <h2>Вартість</h2>
             </div>
-            <div id="list">
-                <div class="listShoping">
-                    <div class="nameServiceShoping">1. Назва товару чи послуги1. Назва товару чи послуги1. Назва товару чи послуги</div>
-                    <div class="priceServiceShoping">200 грн.</div>
-                </div>
-                <div class="listShoping">
-                    <div class="nameServiceShoping">1. Назва товару чи послуги</div>
-                    <div class="priceServiceShoping">200 грн.</div>
-                </div>
-                <div class="listShoping">
-                    <div class="nameServiceShoping">1. Назва товару1. Назва товару чи послуги1. Назва товару чи послуги чи послуги</div>
-                    <div class="priceServiceShoping">200 грн.</div>
-                </div>
-                <div class="listShoping">
-                    <div class="nameServiceShoping">1. Назва товару чи послуги</div>
-                    <div class="priceServiceShoping">200 грн.</div>
-                </div>
-                <div class="listShoping">
-                    <div class="nameServiceShoping">1. Назва т1. Назва товару чи послуги1. Назва товару чи послуги1. Назва товару чи послугиовару чи послуги</div>
-                    <div class="priceServiceShoping">200 грн.</div>
-                </div>
-                <div class="listShoping">
-                    <div class="nameServiceShoping">1. Назва товару чи послуги</div>
-                    <div class="priceServiceShoping">200 грн.</div>
-                </div>
+            <div id="list"></div>
+            <div id="money">
+                <h2>Разом: від</h2>
+                <p id="machFrom">0</p>
+                <h2>до</h2>
+                <p id="machTo">0</p>
+                <h2>грн.</h2>
             </div>
+            <p id="textAhtung">Для більш точнішої ціни заполніть заявку і ми вам зателефонуємо</p>
+            <button class="buttonBtn" id="send" type="submit">Відправити</button>
         </div>
     </div>
     </div>
@@ -187,6 +635,7 @@
 
     <!-- script -->
     <script src="js\calculationJS\main.js"></script>
+    <script src="js\calculationJS\calculation.js"></script>
 </body>
 
 </html>

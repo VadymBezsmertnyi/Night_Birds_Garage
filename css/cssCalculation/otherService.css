@@ -1,0 +1,50 @@
+#generalListService,
+#engineListService,
+#systemIOListService,
+#transmissionListService,
+#removeAddListService,
+#lubricationAndCoolingListService,
+#wheelsListService,
+#steeringListService,
+#suspensionListService,
+#electricalListService,
+#otherListService{
+    display: flex;
+    justify-content: space-around;
+}
+
+.listService{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.listCheckbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.listCheckbox p{
+    margin: 0;
+    text-align: center;
+}
+
+.displayCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price div{
+    text-align: center;
+}
+
+.nameServiceShoping {
+    display: flex;
+    align-items: center;
+}
+
+.nameServiceShoping img{
+    width: 10%;
+}
